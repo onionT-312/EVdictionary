@@ -26,7 +26,7 @@ git clone https://github.com/onionT-312/English.git
 ```
 ### 3. Compile and run the application:
 ```bash
-cd english-learning
+cd English
 mvn clean javafx:run
 ```
 ## Improve
