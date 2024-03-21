@@ -39,19 +39,19 @@ public class DictionaryCommandline extends DictionaryManagement {
     public void dictionaryAdvanced() {
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
+        System.out.println("Welcome to My Application!");
+        System.out.println("[0] Exit");
+        System.out.println("[1] Add");
+        System.out.println("[2] Remove");
+        System.out.println("[3] Update");
+        System.out.println("[4] Display");
+        System.out.println("[5] Lookup");
+        System.out.println("[6] Search");
+        System.out.println("[7] Game");
+        System.out.println("[8] Import from file");
+        System.out.println("[9] Export to file");
 
         while (running) {
-            System.out.println("Welcome to My Application!");
-            System.out.println("[0] Exit");
-            System.out.println("[1] Add");
-            System.out.println("[2] Remove");
-            System.out.println("[3] Update");
-            System.out.println("[4] Display");
-            System.out.println("[5] Lookup");
-            System.out.println("[6] Search");
-            System.out.println("[7] Game");
-            System.out.println("[8] Import from file");
-            System.out.println("[9] Export to file");
             System.out.print("Your action: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
@@ -87,17 +87,14 @@ public class DictionaryCommandline extends DictionaryManagement {
                     // Display all words
                     showAllWords();
                     break;
+
+                //lockup default in dictionary.txt
                 case 5:
                     // Lookup word
-                    System.out.print("Enter English word to lookup: ");
-                    String wordToLookup = scanner.nextLine();
-                    Word result = lookup(wordToLookup);
-                    if (result != null) {
-                        System.out.println("Vietnamese explanation: " + result.getWord_explain());
-                    } else {
-                        System.out.println("Word not found.");
-                    }
+                    dictionaryLookup();
                     break;
+
+                //update sau
                 case 6:
                     // Search words
                     System.out.print("Enter prefix to search: ");
@@ -105,7 +102,7 @@ public class DictionaryCommandline extends DictionaryManagement {
                     dictionarySearcher(prefix);
                     break;
 
-                    //de sau
+                 // chua code
 //                case 7:
 //                    // Game
 //                    System.out.println("Choose a game:");
