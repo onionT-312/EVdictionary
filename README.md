@@ -1,6 +1,6 @@
-<!-- ![Logo1](https://oasis.uet.vnu.edu.vn/static/media/logo-mini.89ecf79d.png) -->
+# Update(240321): Basic Command line
 
-# EnglishLearning APP
+# App Dictionary English to Vietnamese
 This application is an application that helps users learn English through vocabulary management, dictionary lookup and practice exercises and games.
 
 ## Feature
@@ -22,11 +22,11 @@ Vocabulary learning exercises: Exercises are designed to help users learn vocabu
 
 ### 2. Clone project from GitHub:
 ```bash
-git clone https://github.com/onionT-312/English.git
+git clone [https://github.com/onionT-312/English.git](https://github.com/onionT-312/EVdictionary.git)
 ```
 ### 3. Compile and run the application:
 ```bash
-cd English
+cd EVdictionay
 mvn clean javafx:run
 ```
 ## Improve
