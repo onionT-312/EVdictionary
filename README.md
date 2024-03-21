@@ -22,7 +22,7 @@ Vocabulary learning exercises: Exercises are designed to help users learn vocabu
 
 ### 2. Clone project from GitHub:
 ```bash
-git clone [https://github.com/onionT-312/English.git](https://github.com/onionT-312/EVdictionary.git)
+git clone https://github.com/onionT-312/EVdictionary.git
 ```
 ### 3. Compile and run the application:
 ```bash
