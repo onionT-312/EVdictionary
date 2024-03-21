@@ -1,0 +1,45 @@
+add	thêm/cộng
+add	thêm/cộng
+caculator	máy tính
+change	thay đổi
+change	thay đổi
+criterion	tiêu chuẩn
+criterion	tiêu chuẩn
+eight	8
+eight	8
+eleven	11
+eleven	11
+five	5
+five	5
+four	4
+four	4
+hello	xin chào
+hello	xin chào
+nine	9
+nine	9
+pale	nhợt nhạt
+pale	nhợt nhạt
+place	nơi chốn
+place	nơi chốn
+plug	cắm vào
+plug	cắm vào
+seven	7
+seven	7
+six	6
+six	6
+ten	10
+ten	10
+trace	lần dấu vết
+trace	lần dấu vết
+tractor	máy kéo
+tractor	máy kéo
+transaction	giao dịch
+transaction	giao dịch
+translate	dịch
+translate	dịch
+transparent	trong suốt
+transparent	trong suốt
+twelve	12
+twelve	12
+two	2
+two	2
