@@ -1,16 +1,19 @@
-module base.evdictionary {
+module evapp {
     requires javafx.controls;
     requires javafx.fxml;
-    requires javafx.web;
-    requires javafx.graphics;
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
+    requires com.jfoenix;
+    requires java.desktop;
+    requires voicerss.tts;
+    requires org.xerial.sqlitejdbc;
+    requires org.slf4j;
 
-    opens base.evdictionary to javafx.fxml;
-    exports base;
+    requires org.controlsfx.controls;
+    requires org.kordamp.bootstrapfx.core;
+    requires java.sql;
+
+    opens evapp to javafx.fxml;
+    exports evapp;
+    opens evapp.app to javafx.fxml;
+    exports evapp.app;
+    exports evapp.dict;
 }

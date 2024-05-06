@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evapp.app.choosingGame">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/background_game.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="375.0" layoutY="26.0" prefHeight="80.0" prefWidth="440.0" styleClass="choosing_game_label" stylesheets="@../style.css" text="GAMES" textFill="#202dc3">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="276.0" layoutY="174.0" mnemonicParsing="false" onAction="#Hangman" prefHeight="378.0" prefWidth="198.0" styleClass="game_button" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="188.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/hangman_bg.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="635.0" layoutY="381.0" mnemonicParsing="false" onAction="#ListenGame" prefHeight="269.0" prefWidth="243.0" styleClass="game_button" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="160.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/listening.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="608.0" layoutY="131.0" mnemonicParsing="false" onAction="#pronunciationGame" prefHeight="244.0" prefWidth="275.0" styleClass="game_button" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="140.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/pronun.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="676.0" layoutY="325.0" prefHeight="50.0" prefWidth="140.0" styleClass="game_label" stylesheets="@../style.css" text="PRONUNCIATION" />
+      <Label layoutX="687.0" layoutY="600.0" prefHeight="50.0" prefWidth="140.0" styleClass="game_label" stylesheets="@../style.css" text="LISTEN" />
+      <Label layoutX="305.0" layoutY="485.0" prefHeight="50.0" prefWidth="140.0" styleClass="game_label" stylesheets="@../style.css" text="HANGMAN" textFill="RED">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

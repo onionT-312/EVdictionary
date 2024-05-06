@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evapp.app.UI_dictionary">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1190.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/background_game.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="search_root" prefHeight="560.0" prefWidth="996.0" />
+      <AnchorPane prefHeight="615.0" prefWidth="1124.0">
+         <children>
+            <JFXTextArea fx:id="result" layoutX="110.0" layoutY="135.0" prefHeight="450.0" prefWidth="890.0" styleClass="text_area" stylesheets="@../style.css">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font></JFXTextArea>
+            <JFXComboBox fx:id="search" editable="true" layoutX="110.0" layoutY="82.0" prefHeight="40.0" prefWidth="651.0" styleClass="combo_box" stylesheets="@../style.css" unFocusColor="BLACK" />
+            <JFXButton buttonType="RAISED" layoutX="830.0" layoutY="82.0" onAction="#confirm" prefHeight="40.0" prefWidth="60.0" styleClass="search_button" stylesheets="@../style.css" text="   ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/Kinhlup.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="937.0" layoutY="82.0" onAction="#listening" prefHeight="40.0" prefWidth="60.0" styleClass="search_button" stylesheets="@../style.css" text="   ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/Speakericon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+
+            <JFXButton buttonType="RAISED" layoutX="1064.0" layoutY="297.0" onAction="#addword_view" prefHeight="40.0" prefWidth="60.0" styleClass="search_button" stylesheets="@../style.css" text="   ">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/PlusIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

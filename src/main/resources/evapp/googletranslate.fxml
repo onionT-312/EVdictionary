@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evapp.app.googleAPI">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="1190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/background_game.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="570.0" layoutY="286.0" mnemonicParsing="false" onAction="#swap" prefHeight="40.0" prefWidth="40.0" styleClass="swap_button" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/SwapIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="383.0" layoutY="541.0" mnemonicParsing="false" onAction="#listenMain" prefHeight="40.0" prefWidth="40.0" styleClass="swap_button" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/Speakericon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="1013.0" layoutY="547.0" mnemonicParsing="false" onAction="#listenTrans" prefHeight="40.0" prefWidth="40.0" styleClass="swap_button" stylesheets="@../style.css">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/Speakericon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="main_label" alignment="CENTER" layoutX="103.0" layoutY="527.0" prefHeight="70.0" prefWidth="200.0" styleClass="google-trans_label" stylesheets="@../style.css" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="trans_label" alignment="CENTER" layoutX="726.0" layoutY="526.0" prefHeight="70.0" prefWidth="200.0" styleClass="google-trans_label" stylesheets="@../style.css" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" styleClass="google-trans_icon" stylesheets="@../style.css" />
+      <TextArea fx:id="main_text" layoutX="34.0" layoutY="110.0" prefHeight="400.0" prefWidth="520.0" promptText="Insert your words" styleClass="gt_textarea" stylesheets="@../style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="trans_text" editable="false" layoutX="637.0" layoutY="110.0" prefHeight="400.0" prefWidth="520.0" styleClass="gt_textarea" stylesheets="@../style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="148.0" fitWidth="229.0" layoutX="474.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/google.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

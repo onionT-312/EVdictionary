@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evapp.app.PronunciationGame">
+    <children>
+        <ImageView fitHeight="675.0" fitWidth="1190.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pictures/background_game.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="19.0" layoutY="18.0" mnemonicParsing="false" onAction="#ReturnBack" prefHeight="30.0" prefWidth="30.0" styleClass="hangman_button" stylesheets="@../style.css">
+            <graphic>
+                <ImageView fitHeight="37.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../pictures/return.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="89.0" layoutY="19.0" mnemonicParsing="false" onAction="#TryAgain" styleClass="hangman_button" stylesheets="@../style.css">
+            <graphic>
+                <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../pictures/tryagain.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <JFXTextField fx:id="pronunciation_text" alignment="CENTER" editable="false" focusColor="#9167a6" layoutX="209.0" layoutY="62.0" prefHeight="94.0" prefWidth="779.0">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="answer_text" layoutX="210.0" layoutY="503.0" prefHeight="60.0" prefWidth="650.0" promptText="Enter your answer">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fx:id="life5" fitHeight="50.0" fitWidth="50.0" layoutX="1063.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pictures/heart.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="life4" fitHeight="50.0" fitWidth="50.0" layoutX="1013.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pictures/heart.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="life3" fitHeight="50.0" fitWidth="50.0" layoutX="963.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pictures/heart.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="life2" fitHeight="50.0" fitWidth="50.0" layoutX="913.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pictures/heart.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="life1" fitHeight="50.0" fitWidth="50.0" layoutX="863.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pictures/heart.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="PronImage" fitHeight="291.0" fitWidth="242.0" layoutX="474.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pictures/guess.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="final_ans" alignment="CENTER" layoutX="278.0" layoutY="119.0" prefHeight="50.0" prefWidth="635.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="submit" buttonType="RAISED" layoutX="902.0" layoutY="498.0" onAction="#enter" prefHeight="70.0" prefWidth="100.0" styleClass="search_button" stylesheets="@../style.css" text="Submit" />
+
+
+        <!--      new-->
+        <Label fx:id="scoreLabel" alignment="CENTER" layoutX="42.0" layoutY="102.0" prefHeight="36.0" prefWidth="137.0" text="Score: 0" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>
