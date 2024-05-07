@@ -50,3 +50,5 @@ easily and conveniently. In this app have 2 phases:
 | 1  | Phạm Văn Mạnh<br/>     | 21020449<br/> | [@emvipi03](https://github.com/emvipi03)          | Fix code phần CMD, sửa cấu trúc code để code giao diện, hoàn thành package dict và class mainSence để chạy chức năng cơ bản của ứng dụng |
 | 2  | Trần Khánh Phương<br/> | 21020147<br/> | [@FuongTran](https://github.com/FuongTran)        | Sửa code phần CMD, hoàn thiện giao diện cơ bản cho ứng dụng, hoàn thành package app để chạy các chức năng game, thêm từ, tra từ online   |
 | 3  | Nguyễn Đức Thành<br/>  | 21020456<br/> | [@onionT-312](https://github.com/onionT-312)      | Fix code phần CMD, sửa cấu trúc code để code giao diện, hoàn thành package dict và class mainSence để chạy chức năng cơ bản của ứng dụng |
+
+[Original product](https://github.com/emvipi03/EV_App)
